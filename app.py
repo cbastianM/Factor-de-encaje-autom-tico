@@ -17,7 +17,7 @@ st.caption("Pasa el ratón sobre cada partícula para ver su perímetro y área.
 archivo = st.file_uploader("📷 Sube la imagen", type=["jpg", "jpeg", "png"])
 
 if archivo is None:
-    st.info("Recomendación: coloca los agregados sobre un fondo oscuro liso con buena iluminación.")
+    st.info("Recomendación: coloca los agregados sobre un fondo liso con buena iluminación.")
     st.stop()
 
 pil_img = Image.open(archivo).convert("RGB")
